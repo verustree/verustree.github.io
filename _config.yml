@@ -20,7 +20,7 @@ description: I don't know who my grandfather was; I'm much more concerned to kno
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://verustree.github.io/" # the base hostname & protocol for your site
 cover: "/assets/ps2.jpg"
-logo: "/assets/phs_logo.jpg"
+logo: "/assets/mainpicture.jpg"
 
 # Build settings
 markdown: kramdown
