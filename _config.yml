@@ -77,14 +77,14 @@ descriptions:
 social:
   - name: Twitter
     icon: twitter
-    username: TheBenCentra
-    url: https://twitter.com/TheBenCentra
+    username: # TheBenCentra
+    url: # https://twitter.com/TheBenCentra
     desc: Follow me on Twitter
     share: true
 
   - name: Facebook
     icon: facebook
-    username: thebencentra
+    username: 이병호
     url: ""
     desc: Friend me on Facebook
     share: true
@@ -98,8 +98,8 @@ social:
 
   - name: LinkedIn
     icon: linkedin
-    username: Ben Centra
-    url: https://www.linkedin.com/pub/ben-centra/47/769/60a
+    username: Byung Ho Lee
+    url: https://www.linkedin.com/in/byungho777/ # https://www.linkedin.com/pub/ben-centra/47/769/60a
     desc: Connect with me on LinkedIn
     share: true
 
