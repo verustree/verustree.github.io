@@ -42,6 +42,10 @@ $base-background-color: #fff;   //fff
 $base-font-color: $dark-gray;
 $action-color: $green;   //blue
 $highlight-color: tint($action-color, 33%);
+::selection {
+  color: black;
+  background: green;
+}
 
 // Border
 $base-border-color: $light-gray;
