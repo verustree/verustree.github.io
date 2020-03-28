@@ -40,7 +40,7 @@ $bc-red: #bc0000;
 
 // Font Colors
 $base-background-color: #fff;   //fff
-$base-font-color: $gray;   //dark-gray
+$base-font-color: $dark-gray; 
 $action-color: $green;   //blue
 $highlight-color: tint($action-color, 33%);
 $selection: $light-green;  //원래 없는데 내가 집어넣은 거
