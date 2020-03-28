@@ -25,6 +25,7 @@ $base-z-index: 0;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$light-green: #31e092;  // 내가 추가한 것
 $white: #fff;
 // Flat UI Colors. For more, see http://flatuicolors.com/
 $turquoise: #1abc9c;	// Turqoise
@@ -42,7 +43,7 @@ $base-background-color: #fff;   //fff
 $base-font-color: $dark-gray;
 $action-color: $green;   //blue
 $highlight-color: tint($action-color, 33%);
-$selection: #90EE90;  //원래 없는데 내가 집어넣은 거
+$selection: $light-green;  //원래 없는데 내가 집어넣은 거
 
 // Border
 $base-border-color: $light-gray;
