@@ -34,7 +34,7 @@ categories: Network
 		-> DEVICE=eth[x] -> [y]로 변경
 	<li>service network restart</li>
 	
-	2) vi /etc/udev/rules.d/70-persistent-net.rules <br>
+  2) vi /etc/udev/rules.d/70-persistent-net.rules <br>
 		-> SUBSYSTEM으로 시작하는 라인중에서 뒤에 MAC 주소를 확인 후 쓰지 않는 SUBSYSTEM으로 시작하는 라인은 전부 삭제<br>
 		-> SUBSYSTEM으로 시작하는 라인중에서 마지막 NAME 부분을 원하는 번호로 설정!<br>
 		-> 변경 후 저장하고 나감 (:wq)  <br>
@@ -43,11 +43,11 @@ categories: Network
 
 <p>
 <h4>4. 외부 네트워크 통신 확인!</h4>
-	ping 8.8.8.8 -> 통신 안되면 라우팅 테이블 확인!!
-	linux : netstat -nr ,  Windows : route print -4, Cisco Router : sh ip route
-	linux : route add -net [목적지 네트워크 주소]/CIDR  gw  [gateway 주소]
-	Windows : route add [목적지 네트워크 주소] mask [subnetmask ] gateway 주소
-	cisco router : ip route [목적지 네트워크 주소] [subnetmask] [nexthop 주소]
+	1) ping 8.8.8.8 -> 통신 안되면 라우팅 테이블 확인!!<br>
+	2) linux : netstat -nr ,  Windows : route print -4, Cisco Router : sh ip route<br>
+	3) linux : route add -net [목적지 네트워크 주소]/CIDR  gw  [gateway 주소]<br>
+	4) Windows : route add [목적지 네트워크 주소] mask [subnetmask ] gateway 주소<br>
+	5) cisco router : ip route [목적지 네트워크 주소] [subnetmask] [nexthop 주소]
 </p>
 
 <p>
