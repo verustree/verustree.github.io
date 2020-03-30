@@ -45,9 +45,9 @@ www.google.com으로 핑을 날렸을 때 잘 되면 통신이 이미 잘 되는
 <p>
 <h4>4. 외부 네트워크 통신 확인</h4>
 	1) ping 8.8.8.8 -> 통신 안되면 라우팅 테이블 확인<br>
-	2) linux : netstat -nr ,  Windows : route print -4, Cisco Router : sh ip route<br>
+	2) linux : netstat -nr,    Windows : route print -4,    Cisco Router : sh ip route<br>
 	3) linux : route add -net [목적지 네트워크 주소]/CIDR  gw  [gateway 주소]<br>
-	4) Windows : route add [목적지 네트워크 주소] mask [subnetmask ] gateway 주소<br>
+	4) Windows : route add [목적지 네트워크 주소] [subnetmask] [gateway 주소]<br>
 	5) cisco router : ip route [목적지 네트워크 주소] [subnetmask] [nexthop 주소]
 </p><br>
 
