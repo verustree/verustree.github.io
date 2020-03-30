@@ -8,7 +8,7 @@ categories: Network
 
 <strong>리눅스 환경에서 네트워크 설정이 안된다면 다음의 방법을 활용해보자.</strong><br>
 www.google.com으로 핑을 날렸을 때 잘 되면 통신이 이미 잘 되는거다<br>
-핑이 안 날라간다면 밑에 있는 항목을 차근차근 따라해보자<br>
+핑이 안 날라간다면 밑에 있는 항목을 차근차근 따라해보자<br><br>
 
 <p>
 <h4>1. Cable 연결 여부 확인  -> LED불이 들어오면 확인 끝</h4>
@@ -26,10 +26,10 @@ www.google.com으로 핑을 날렸을 때 잘 되면 통신이 이미 잘 되는
 	<li>ping [GATEWAY ADDRESS]</li><ul>
 	<li>ex) 192.168.40.1  ->  안되면 네트워크 설정 파일 확인</li></ul>
 	<li>VMware 환경일 경우 ethernet 장치 이름 확인하자</li><ul>
-	<li>-> dmesg | grep eth  (시스템 로그 파일 확인)</li>
-	<li>-> udev: renamed network interface eth0 to eth1  이렇게 나온다면</li></ul>
+	<li>-> dmesg | grep eth  (시스템 로그 파일 확인)</li></ul>
+
 만약 이래도 안된다면 다음의 방법을 사용하자.<br>
-	1) cd /etc/sysconfig/network-scripts
+1) cd /etc/sysconfig/network-scripts
 		<li>mv ifcfg-eth[x] ifcfg-eth[y]</li>
 		<li>vi ifcfg-eth[y]</li>
 		-> DEVICE=eth[x] -> [y]로 변경
@@ -39,7 +39,7 @@ www.google.com으로 핑을 날렸을 때 잘 되면 통신이 이미 잘 되는
 		-> SUBSYSTEM으로 시작하는 라인중, MAC 주소를 확인 후 쓰지 않는 SUBSYSTEM으로 시작하는 라인은 전부 삭제<br>
 		-> SUBSYSTEM으로 시작하는 라인중, 마지막 NAME 부분을 원하는 번호로 설정<br>
 		-> 변경 후 저장하고 나감 (:wq)  <br>
-	<li>	system reboot해주기(shutdown -r now, init 6, reboot)	</li>
+    -> system reboot해주기(shutdown -r now, init 6, reboot)
 </p><br>
 
 <p>
@@ -54,9 +54,9 @@ www.google.com으로 핑을 날렸을 때 잘 되면 통신이 이미 잘 되는
 <p>
 <h4>5. 도메인 주소를 이용한 통신 확인</h4>
 구글로 핑을 날렸는데 핑이 안간다면 다음의 방법을 사용하자<br>
-	1. linux 기준  -  /etc/resolv.conf -> 파일 내용 확인!<br>
-			-> nameserver [DNS서버주소]<br>
-			-> ex) nameserver 210.220.163.82  <br>
-	2. 네트워크 설정파일(/etc/sysconfig/network-scripts/ifcfg-eth[x])<br>
-	DNS1 옵션이 설정 잘 되어있는지 확인
+1. linux 기준  -  /etc/resolv.conf -> 파일 내용 확인!<br>
+-> nameserver [DNS서버주소]<br>
+-> ex) nameserver 210.220.163.82  <br>
+2. 네트워크 설정파일(/etc/sysconfig/network-scripts/ifcfg-eth[x])<br>
+-> DNS1 옵션이 설정 잘 되어있는지 확인
 </p>
