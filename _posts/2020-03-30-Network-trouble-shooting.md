@@ -7,7 +7,7 @@ categories: Network
 ---
 
 <strong>리눅스 환경에서 네트워크 설정이 안된다면 다음의 방법을 활용해보자.</strong><br>
-우선 들어가기에 앞서...www.google.com으로 핑을 날렸을 때 잘 되면 통신 잘되는 거!<br>
+www.google.com으로 핑을 날렸을 때 잘 되면 통신이 이미 잘 되는거다<br>
 핑이 안 날라간다면 밑에 있는 항목을 차근차근 따라해보자<br>
 
 <p>
@@ -17,7 +17,7 @@ categories: Network
 
 <p>
 <h4>2. ping localhost</h4>
-	<li>ping 127.0.0.1  -> 안되면 NIC 교체 후 다시 테스트!!</li>
+	<li>ping 127.0.0.1  -> 안되면 NIC 교체 후 다시 테스트해보자.</li>
 </p><br>
 
 <p>
@@ -25,10 +25,10 @@ categories: Network
 우선 들어가기에 앞서 다음의 사항들을 먼저 확인해보자.<br>
 	<li>ping [GATEWAY ADDRESS]</li><ul>
 	<li>ex) 192.168.40.1  ->  안되면 네트워크 설정 파일 확인</li></ul>
-	<li>VMware 환경일 경우 ethernet 장치 이름 확인!!</li><ul>
+	<li>VMware 환경일 경우 ethernet 장치 이름 확인하자</li><ul>
 	<li>-> dmesg | grep eth  (시스템 로그 파일 확인)</li>
 	<li>-> udev: renamed network interface eth0 to eth1  이렇게 나온다면</li></ul>
-만약 이래도 안된다면..!<br>
+만약 이래도 안된다면 다음의 방법을 사용하자.<br>
 	1) cd /etc/sysconfig/network-scripts
 		<li>mv ifcfg-eth[x] ifcfg-eth[y]</li>
 		<li>vi ifcfg-eth[y]</li>
@@ -53,7 +53,7 @@ categories: Network
 
 <p>
 <h4>5. 도메인 주소를 이용한 통신 확인</h4>
-구글로 핑을 날렸는데 핑이 안간다면...<>
+구글로 핑을 날렸는데 핑이 안간다면 다음의 방법을 사용하자<br>
 	1. linux 기준  -  /etc/resolv.conf -> 파일 내용 확인!<br>
 			-> nameserver [DNS서버주소]<br>
 			-> ex) nameserver 210.220.163.82  <br>
