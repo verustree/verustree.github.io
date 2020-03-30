@@ -53,7 +53,7 @@ categories: Network
 
 <p>
 <h4>5. 도메인 주소를 이용한 통신 확인</h4>
-구글로 핑을 날렸는데 핑이 안간다면...
+구글로 핑을 날렸는데 핑이 안간다면...<>
 	1. linux 기준  -  /etc/resolv.conf -> 파일 내용 확인!<br>
 			-> nameserver [DNS서버주소]<br>
 			-> ex) nameserver 210.220.163.82  <br>
