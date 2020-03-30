@@ -55,8 +55,10 @@ www.google.com으로 핑을 날렸을 때 잘 되면 통신이 이미 잘 되는
 <h4>5. 도메인 주소를 이용한 통신 확인</h4>
 구글로 핑을 날렸는데 핑이 안간다면 다음의 방법을 사용하자<br>
 1. linux 기준  -  /etc/resolv.conf -> 파일 내용 확인!<br>
+<blockquote>
 -> nameserver [DNS서버주소]<br>
--> ex) nameserver 210.220.163.82  <br>
+-> ex) nameserver 210.220.163.82  
+</blockquote><br>
 2. 네트워크 설정파일(/etc/sysconfig/network-scripts/ifcfg-eth[x])<br>
--> DNS1 옵션이 설정 잘 되어있는지 확인
+<blockquote>-> DNS1 옵션이 설정 잘 되어있는지 확인</blockquote>
 </p>
