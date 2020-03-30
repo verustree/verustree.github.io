@@ -7,7 +7,7 @@ categories: Network
 ---
 
 <strong>리눅스 환경에서 네트워크 설정이 안된다면 다음의 방법을 활용해보자.</strong><br>
-www.google.com으로 핑을 날렸을 때 잘 되면 통신이 이미 잘 되는거다<br>
+<a href = "https://www.google.com/" target="_blank">구글</a>로 핑을 날렸을 때 잘 되면 통신이 이미 잘 되는거다<br>
 핑이 안 날라간다면 밑에 있는 항목을 차근차근 따라해보자<br><br>
 
 <p>
