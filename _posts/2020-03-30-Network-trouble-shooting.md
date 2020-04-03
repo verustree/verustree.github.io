@@ -28,7 +28,7 @@ categories: Network
 	<li>VMware 환경일 경우 ethernet 장치 이름 확인하자</li><ul>
 	<li>-> dmesg | grep eth  (시스템 로그 파일 확인)</li></ul>
 
-만약 이래도 안된다면 다음의 방법을 사용하자!<br>
+만약 이래도 안된다면 다음의 방법을 사용하자..!<br>
 1) cd /etc/sysconfig/network-scripts
 		<li>mv ifcfg-eth[x] ifcfg-eth[y]</li>
 		<li>vi ifcfg-eth[y]</li>
